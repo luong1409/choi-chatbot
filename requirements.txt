@@ -1,0 +1,13 @@
+langchain
+langchain-core
+langchain-openai
+langchain-community
+chromadb
+faiss-cpu
+langchain-ollama
+langchain-experimental
+loguru
+langgraph
+langsmith
+gradio
+ipykernel

@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "choi-chatbot"
+version = "0.1.0"
+description = "This is a chatbot named Choi."
+authors = ["luke1409 <nmluong.1409@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.3.4"
+langchain-core = "^0.3.13"
+langchain-openai = "^0.2.4"
+langchain-community = "^0.3.3"
+chromadb = "^0.5.16"
+faiss-cpu = "^1.9.0"
+langchain-ollama = "^0.2.0"
+langchain-experimental = "^0.3.2"
+loguru = "^0.7.2"
+langgraph = "^0.2.39"
+langsmith = "^0.1.137"
+gradio = "^5.4.0"
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+fastapi = "backend.choi_chatbot:run"
+frontend = "frontend.gradio.campaign_gradio:run"
